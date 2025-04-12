@@ -16,7 +16,7 @@ This repository contains the following key components:
 
 * **`final.ipynb`**: The Jupyter Notebook containing the Python code implementation for the project, including data loading, model definition, training (baseline and adversarial), attack generation, and evaluation.
 * **`IEEE_report.pdf`**: The detailed report documenting the project's background, methodology, experiments, findings, and conclusions.
-* **Pre-trained Model Weights (`.pth` files)**: To facilitate testing and exploration without the need for time-consuming retraining, the following pre-trained model state dictionaries are provided:
+* **Pre-trained Model Weights **: To facilitate testing and exploration without the need for time-consuming retraining, the following pre-trained model state dictionaries are provided through the [link](https://drive.google.com/drive/folders/16geOQjMNB1GluZZQhenlpxcPTey46tPB?usp=sharing):
     * `resnet50_basic_training_state_dict.pth`: Weights for the baseline ResNet50 model trained on clean images.
     * `resnet50_fgm_state_dict.pth`: Weights for the ResNet50 model adversarially trained using the FGSM attack.
     * `resnet50_pgd_state_dict.pth`: Weights for the ResNet50 model adversarially trained using the PGD attack.
@@ -27,7 +27,7 @@ This repository contains the following key components:
 
 ### Dataset
 
-* **The project** utilizes the Kaggle animal image dataset, comprising 5400 images across 90 categories.
+* **The project** utilizes the [Kaggle Animal Image Dataset](https://www.kaggle.com/datasets/iamsouravbanerjee/animal-image-dataset-90-different-animals), comprising 5400 images across 90 categories.
 * The dataset was split 80/20 for training and testing, using a stratified split to maintain class proportions.
 
 ### Baseline Model
@@ -83,3 +83,6 @@ The models' performance was evaluated based on accuracy against normal inputs an
 * Li, Y., Cheng, M., Hsieh, C., & Lee, T. C. (2022). A review of Adversarial Attack and Defense for classification methods. The American Statistician, 76(4), 329-345. [https://doi.org/10.1080/00031305.2021.2006781](https://doi.org/10.1080/00031305.2021.2006781)
 * Madry. A. (2017, June 19). Towards deep learning models resistant to adversarial attacks. arXiv.org. [https://arxiv.org/abs/1706.0608](https://arxiv.org/abs/1706.0608)
 * Zhang, H., Cisse, M., Dauphin, Y. N., & Lopez-Paz, D. (2017). mixup: Beyond Empirical Risk Minimization. ArXiv (Cornell University). [https://doi.org/10.48550/arxiv.1710.09412](https://doi.org/10.48550/arxiv.1710.09412)
+
+### Feel free to submit issues or pull requests if you find any bugs or want to contribute improvements to the code or email me at haidangnguyen1815@gmail.com.
+
